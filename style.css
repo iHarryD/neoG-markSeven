@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;600&display=swap");
+
+/* Global Reset */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Root Varaibles */
+
+:root {
+  --background-clr: rgb(43, 43, 43);
+  --accent-clr: #c52027;
+  --main-ff: "Mukta", "sans-serif";
+  --main-fc: #fff;
+}
+
+/* Basics */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--background-clr);
+}
+
+textarea,
+button,
+a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Typograpgy */
+
+body * {
+  font-family: var(--main-ff);
+  color: var(--main-fc);
+}
+
+form {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Styling */
+
+header,
+main,
+footer {
+  padding: 1em;
+}
+
+header {
+  background: var(--accent-clr);
+  display: flex;
+  align-items: baseline;
+}
+
+#klingon-logo {
+  width: 40px;
+  margin: 0 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 0.2em 0;
+}
+
+#textareaInput,
+#output-div {
+  width: min(90%, 800px);
+  min-height: 40px;
+  padding: 0.5em;
+  border: 2px solid var(--accent-clr);
+  border-radius: 5px;
+  word-break: break-all;
+  background: rgb(31, 31, 31);
+  transition: box-shadow 250ms;
+}
+
+#translate-btn {
+  background: var(--accent-clr);
+  width: min(70%, 300px);
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 250ms;
+}
+
+#textareaInput:focus,
+#translate-btn:hover {
+  box-shadow: 0 0 5px var(--accent-clr);
+}
+
+#output-div {
+  display: none;
+}
+
+footer {
+  background: var(--accent-clr);
+  padding-bottom: 1px;
+}
+
+#social-media-tab li {
+  margin: 10px;
+}
+
+.social-media-links:hover {
+  text-decoration: underline;
+}
+
+#portfolio-link {
+  margin-top: 20px;
+  opacity: 0.6;
+  transition: all 250ms;
+}
+#portfolio-link:hover {
+  opacity: 1;
+}
